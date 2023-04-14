@@ -8,27 +8,24 @@
     <body id="container">
 
         <aside id="navbar">
+
+<!-- REORGANIZE -->
+
             <a class="selected">
                 <div>
-                Visualizers
+                Home
                 </div>
             </a>
 
             <a>
                 <div>
+                Case Study
+                </div>
+            </a>
+
+            <a>
+            <div>
                 Freelance
-                </div>
-            </a>
-
-            <a>
-                <div>
-                Demos
-                </div>
-            </a>
-
-            <a>
-                <div>
-                Screensavers
                 </div>
             </a>
 
@@ -40,10 +37,21 @@
 
             <a>
                 <div>
-                Project Highlight
+                Demos
                 </div>
             </a>
 
+            <a>
+                <div>
+                Visualizers
+                </div>
+            </a>
+
+            <a>
+                <div>
+                Screensavers
+                </div>
+            </a>
 
         </aside>
 
@@ -53,38 +61,67 @@
 
             
         </header>
+<!-- popup section -->
+        <section class="hide" id="popup-section">
+
+            <div id="b1" class="hide">
+                <h1>Creatz Album Cover</h1>
+                <video controls>
+                    <source src="" type="video/mp4">
+                  </video>
+                  <p onclick="hidepop('#b1')" >Close</p>
+            </div>
+            
+        </section>
 
         <main>
             <article id="main-section-four">
 
-                <section>
+                <section class="smallestbox">
+                    <h1>Overview</h1>
+                    <p>If you somehow manage to find this site, it is still under construction</p>
+                </section>
+
+                <section id="hoverable-section" onclick="showpop('#b1')">
+                    <h1>Overview</h1>
+                    <img src="thumbnails/design/evil_company_logo.png" alt="#">
+                </section>
+
+                <section class="smallerbox">
                     <h1>Overview</h1>
                     <p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
-                </section>
-
-                <section id="hoverable-section">
-                    <h1>Overview</h1>
-                    <img src="thumbnails/random_stuff/evil_company_logo.png" alt="#">
-                </section>
-
-                <section>
-                    <h1>Overview</h1>
-                    <p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
-                </section>
-
-                <section id="hoverable-section">
-                    <h1>Overview</h1>
-                    <img src="thumbnails/projects/creatz_album_cover.png" alt="#">
                 </section>
                 
-                <section>
+                <section class="smallerbox">
+                    <h1>Overview</h1>
+                    <p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
+                </section>
+
+                <section class="linebreak"></section>
+
+                <section class="largerbox">
+                    <h1>Overview</h1>
+                    <p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
+                </section>
+
+                <section class="largerbox">
                     <h1>Overview</h1>
                     <p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
                 </section>
 
                 <section id="hoverable-section">
                     <h1>Overview</h1>
-                    <img src="thumbnails/projects/creatz_album_cover.png" alt="#">
+                    <img src="thumbnails/design/evil_company_logo.png" alt="#">
+                </section>
+                
+                <section class="largestbox">
+                    <h1>Overview</h1>
+                    <p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</p>
+                </section>
+
+                <section id="hoverable-section">
+                    <h1>Overview</h1>
+                    <img src="thumbnails/design/evil_company_logo.png" alt="#">
                 </section>
 
             </article>
@@ -97,13 +134,19 @@
 
     <a>
         <div>
-        Contact
+        Hire Me
         </div>
     </a>
 
     <a>
         <div>
         Socials
+        </div>
+    </a>
+
+    <a>
+        <div>
+        Bio
         </div>
     </a>
 

@@ -14,6 +14,18 @@ a, a:hover, a:visited, a:active {
     text-decoration: none;
 }
 
+/* Animation */
+
+@keyframes hello {
+    0% {background-color: #222; box-shadow: 0 0 5px 5px #222; color: orange;}
+    50% {background-color: orange; box-shadow: 0 0 5px 5px orange; color: #111;}
+    100% {background-color: #222; box-shadow: 0 0 5px 5px #222; color: orange;}
+}
+@keyframes selected {
+    0% {background-color: #222; box-shadow: 0 0 5px 5px #222; color: orange;}
+    100% {background-color: orange; box-shadow: 0 0 5px 5px orange; color: #111;}
+}
+
 /*borders:*/
 /* header, nav, article, aside {
     border: solid 5px teal;
@@ -39,7 +51,7 @@ body {
     display: grid;
     grid-template-columns: 15% auto;
     grid-template-rows: 15% auto 7%;
-    background-image: url("image_assets/backimg.png");
+    background-image: url("image_assets/backgrounds/back_100.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -55,7 +67,7 @@ aside {
     margin-bottom: 0px;
     padding: 20px;
     padding-left: 5px;
-    background-image: url("image_assets/backimg.png");
+    background-image: url("image_assets/backgrounds/back_101.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -69,26 +81,29 @@ header {
     grid-column-end: 2;
     grid-row-end: 2;
     background: #111;
+    box-shadow: 0 0 5px 5px #111;
     position: sticky;
     top: 0px;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
     margin-bottom: 0px;
-    padding: 10px;
+    padding-left: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-image: url("image_assets/backimg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     color: orange;
+    font-weight: bold;
 }
 
 main {
     background: #111;
+    box-shadow: 0 0 5px 5px #111;
+    background-image: url("image_assets/backgrounds/back_102.png");
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
@@ -100,7 +115,6 @@ main {
     overflow-y: auto;
     z-index: 3;
     padding: 20px;
-    background-image: url("image_assets/backimg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -113,10 +127,11 @@ main {
 
 #navbar a {
     color: orange;
+    font-weight: bold;
     background-color: #222;
-    background-image: url("image_assets/backimg.png");
+    box-shadow: 0 0 5px 5px #222;
     padding: 10px;
-    margin-left: 5px;
+    margin-left: 20px;
     font-size: 1em;
     width: auto;
     height: 100%;
@@ -125,25 +140,34 @@ main {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
+    transition: .75s;
+        /* Hello Animation */
+        animation-name: hello;
+        animation-duration: 1.5s;
+        /* Hello Animation */
 }
 
 #navbar .selected {
     background-color: orange;
+    box-shadow: 0 0 5px 5px orange;
     color: #222;
     font-weight: bold;
+        /* Selected Animation */
+        animation-name: selected;
+        animation-duration: .75s;
+        /* Selected Animation */
 }
 
 #navbar a:hover {
     color: #222;
     background-color: orange;
+    box-shadow: 0 0 5px 5px orange;
     font-weight: bold;
+    cursor: pointer;
+    transition: .75s;
 }
 
 /* Header */
-
-#creativeoutletalign {
-    text-align: right;
-}
 
 #name { 
     font-size: 1.5em;
@@ -163,35 +187,64 @@ main {
 #main-section-four section {
     color: orange;
     background-color: #222;
-    background-image: url("image_assets/backimg.png");
+    box-shadow: 0 0 5px 5px #222;
     padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+#hoverable-section {
+    transition: .75s;
+    /* Hello Animation */
+    animation-name: hello;
+    animation-duration: 1.5s;
+    /* Hello Animation */
+}
+
 #hoverable-section:hover {
     color: #222;
     background-color: orange;
+    box-shadow: 0 0 5px 5px orange;
+    cursor: pointer;
+    transition: .75s;
 }
 
 #main-section-four section h1 {
     margin-bottom: 10px;
 }
 
-#main-section-four section p {
-    width: 300px;
-}
-
 #main-section-four section img {
     margin-bottom: 10px;
     width: 300px;
     opacity: 70%;
+    transition: .75s;
 }
 
 #main-section-four section:hover img {
     opacity: 100%;
+    transition: .75s;
 }
+
+/* box sizes */
+
+.smallestbox {
+    width: 10%;
+}
+.smallerbox {
+    width: 20%;
+}
+.largerbox {
+    width: 30%;
+}
+.largestbox {
+    width: 100%;
+}
+.linebreak {
+    width: 100%;
+    opacity: 0;
+}
+
 
 /* footer */
 
@@ -207,24 +260,26 @@ footer {
     grid-row-end: 4;
     overflow-y: auto;
     z-index: 3;
-    padding: 10px;
+    padding: 5px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-image: url("image_assets/backimg.png");
+    background-image: url("image_assets/backgrounds/back_103.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     color: orange;
+    font-weight: bold;
+    overflow: hidden;
 }
 
 footer a {
     color: orange;
     background-color: #222;
-    background-image: url("image_assets/backimg.png");
+    box-shadow: 0 0 5px 5px #222;
     padding: 10px;
-    margin-left: 5px;
+    margin-left: 20px;
     font-size: 1em;
     width: auto;
     height: 100%;
@@ -233,12 +288,31 @@ footer a {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
+    transition: .75s;
+        /* Hello Animation */
+        animation-name: hello;
+        animation-duration: 1.5s;
+        /* Hello Animation */
+}
+
+footer .selected {
+    background-color: orange;
+    box-shadow: 0 0 5px 5px orange;
+    color: #222;
+    font-weight: bold;
+        /* Selected Animation */
+        animation-name: selected;
+        animation-duration: .75s;
+        /* Selected Animation */    
 }
 
 footer a:hover {
     color: #222;
     background-color: orange;
-    font-weight: bold;
+    box-shadow: 0 0 5px 5px orange;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: .75s;
 }
 /* popups */
 
@@ -264,11 +338,40 @@ footer a:hover {
 }
 
 #popup-section div h1{
-    margin-bottom: 10px;
+    color: orange;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+#popup-section div p{
+    color: orange;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #222;
+    box-shadow: 0 0 5px 5px #222;
+    font-size: 1.1em;
+    transition: .75s;
+            /* Hello Animation */
+            animation-name: hello;
+            animation-duration: 1.5s;
+            /* Hello Animation */
+}
+
+#popup-section div p:hover{
+    color: #111;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: orange;
+    box-shadow: 0 0 5px 5px orange;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .75s;
 }
 
 #popup-section div video{
     height: 80vh;
+    box-shadow: 0 0 15px 5px orange;
 }
 
 #popup-section div img{
@@ -282,4 +385,17 @@ footer a:hover {
     display: flex !important;
 }
 
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+  }  
+  ::-webkit-scrollbar-thumb {
+    background: orange;
+    border-radius: 10px;
+  }
+
 /* Responsive Stuff */
+
+
+
+
