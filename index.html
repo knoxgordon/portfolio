@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Bio Page</title>
+        <title>Home</title>
         <link rel="stylesheet" href="style.css">
         <script type="text/javascript" src="js/index_js.js" defer></script>
     </head>
@@ -11,45 +11,46 @@
 
 <!-- REORGANIZE -->
 
-            <a class="selected">
+
+            <a href="index.html" class="selected">
                 <div>
                 Home
                 </div>
             </a>
 
-            <a>
+            <a href="case_study.html">
                 <div>
                 Case Study
                 </div>
             </a>
 
-            <a>
+            <a href="freelance.html">
             <div>
                 Freelance
                 </div>
             </a>
 
-            <a>
+            <a href="design.html">
                 <div>
                 Design
                 </div>
             </a>
 
-            <a>
+            <a href="demos.html">
                 <div>
                 Demos
                 </div>
             </a>
 
-            <a>
+            <a href="visualizers.html">
                 <div>
-                Visualizers
+                Video Editing
                 </div>
             </a>
 
-            <a>
+            <a href="screensavers.html">
                 <div>
-                Screensavers
+                Screensavers <br> Visualizers
                 </div>
             </a>
 
@@ -65,63 +66,82 @@
         <section class="hide" id="popup-section">
 
             <div id="b1" class="hide">
-                <h1>Creatz Album Cover</h1>
-                <video controls>
-                    <source src="" type="video/mp4">
-                  </video>
-                  <p onclick="hidepop('#b1')" >Close</p>
+                <h1>Teaser Reel</h1>
+                
+                <iframe src="https://www.youtube.com/embed/sJGflk9AYuk" title="2023 Teaser Reel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  <p onclick="hidepop('#b1'); window.location.reload();" >Close</p>
+            </div>
+
+            <div id="b2" class="hide">
+                <h1>Extended Reel</h1>
+                
+                <iframe src="https://www.youtube.com/embed/ykRVdKS27Wo" title="Extended Reel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  <p onclick="hidepop('#b2'); window.location.reload();">Close</p>
             </div>
             
         </section>
 
         <main>
             <article id="main-section-four">
-
-                <section class="smallestbox">
-                    <h1>Overview</h1>
-                    <p>If you somehow manage to find this site, it is still under construction</p>
-                </section>
-
-                <section id="hoverable-section" onclick="showpop('#b1')">
-                    <h1>Overview</h1>
-                    <img src="thumbnails/design/evil_company_logo.png" alt="#">
-                </section>
-
-                <section class="smallerbox">
-                    <h1>Overview</h1>
-                    <p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
-                </section>
                 
-                <section class="smallerbox">
-                    <h1>Overview</h1>
-                    <p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
+                <section class="largerbox">
+                    <h1>Welcome!</h1>
+                    <p>This website is a showcase of my work, and is set up to easily constantly expand. If you see something that looks like it's under construction, it probably is. Feel free to explore this site in any order, but I would recommend watching my teaser reel first. The rest of the site is split into categories of different work I've done. The case study tab is an in depth look at one of my more visually impressive projects. The freelance tab is for freelance work I've done. The design tab is for more artsy animations and non-animation typography design. The demos tab is mostly for short test animations. The video editing tab is for projects that revolved around editing rather than animation, including two short films. The screensavers and visualizers tab is a highlight of my smaller passion projects, revolving around music visualizers and screensavers. It does not appear on the mobile version. If you're interested in hiring me, use the button in the bottom left of every page to get in contact.</p>
                 </section>
 
                 <section class="linebreak"></section>
 
-                <section class="largerbox">
-                    <h1>Overview</h1>
-                    <p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
+                <section class="imagebox" id="hoverable-section" onclick="showpop('#b1')">
+                    <h1>Teaser Reel</h1>
+                    <img src="image_assets/thumbnails/else/teaser.png" alt="#">
                 </section>
 
-                <section class="largerbox">
-                    <h1>Overview</h1>
-                    <p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
+                <section class="linebreak"></section>
+             
+                <section class="imagebox" id="hoverable-section" onclick="showpop('#b2')">
+                    <h1>Extended Reel</h1>
+                    <img src="image_assets/thumbnails/else/extended.png" alt="#">
                 </section>
 
-                <section id="hoverable-section">
-                    <h1>Overview</h1>
-                    <img src="thumbnails/design/evil_company_logo.png" alt="#">
-                </section>
                 
-                <section class="largestbox">
-                    <h1>Overview</h1>
-                    <p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</p>
+                
+                <section class="smallerbox">
+                    <h1>&nbsp;</h1>
+                    <p>This extended reel includes my teaser reel, but also has a longer second half that shows some projects in a little more detail. Projects that have important audio with them also have their audio.</p>
                 </section>
 
-                <section id="hoverable-section">
-                    <h1>Overview</h1>
-                    <img src="thumbnails/design/evil_company_logo.png" alt="#">
+                <section class="linebreak"></section>
+
+                <section class="largestbox">
+                    <h1>Skills</h1>
+                </section>
+
+                <section class="linebreak"></section>
+
+                <section class="smallerbox">
+                    <h1>Motion Graphics</h1>
+                    <p>Animation in After Effects in nearly any motion graphic style.</p>
+                </section>
+
+                
+                
+                <section class="smallerbox">
+                    <h1>Video Editing</h1>
+                    <p>Video editing in Premiere Pro and After Effects.</p>
+                </section>
+
+                
+
+                <section class="smallerbox">
+                    <h1>Audio and Video</h1>
+                    <p>Syncing video to audio and detailed audio manipulation.</p>
+                </section>
+
+                
+
+                <section class="smallerbox">
+                    <h1>Communication</h1>
+                    <p>Quick responses and quickly implementing needed changes.</p>
                 </section>
 
             </article>
@@ -132,19 +152,19 @@
 
 <footer>
 
-    <a>
+    <a href="hire_me.html">
         <div>
         Hire Me
         </div>
     </a>
 
-    <a>
+    <a href="socials.html">
         <div>
         Socials
         </div>
     </a>
 
-    <a>
+    <a href="bio.html">
         <div>
         Bio
         </div>
